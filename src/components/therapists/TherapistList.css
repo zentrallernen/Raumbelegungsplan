@@ -1,0 +1,76 @@
+.therapist-list-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.therapist-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.therapist-list-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  transition: var(--transition);
+}
+
+.therapist-list-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.therapist-list-content {
+  flex: 1;
+}
+
+.therapist-name {
+  font-size: 20px;
+  color: var(--dark-color);
+  margin: 0 0 5px 0;
+}
+
+.therapist-specialty {
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.therapist-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.contact-item {
+  font-size: 14px;
+  color: var(--gray-color);
+}
+
+.therapist-list-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .therapist-list-item {
+    flex-direction: column;
+  }
+  
+  .therapist-list-actions {
+    flex-direction: row;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  
+  .therapist-contact {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,113 @@
+.therapist-detail-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.therapist-detail-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.therapist-info h2,
+.therapist-schedule h2 {
+  margin-bottom: 20px;
+  color: var(--dark-color);
+  font-size: 20px;
+}
+
+.info-item {
+  margin-bottom: 15px;
+}
+
+.info-label {
+  font-weight: 600;
+  color: var(--dark-color);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.info-value {
+  color: var(--gray-color);
+}
+
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weekly-schedule {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.day-schedule {
+  background-color: #f8f9fa;
+  border-radius: var(--border-radius);
+  padding: 15px;
+}
+
+.day-name {
+  font-size: 18px;
+  color: var(--dark-color);
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.day-appointments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.schedule-appointment {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  box-shadow: var(--shadow);
+}
+
+.appointment-time {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.appointment-location {
+  font-size: 14px;
+  color: var(--gray-color);
+  margin-bottom: 10px;
+}
+
+.no-appointments {
+  color: var(--gray-color);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .therapist-detail-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .page-actions {
+    margin-top: 10px;
+  }
+  
+  .weekly-schedule {
+    grid-template-columns: 1fr;
+  }
+}

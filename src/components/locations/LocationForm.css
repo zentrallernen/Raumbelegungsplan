@@ -1,0 +1,42 @@
+.location-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.rooms-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.room-input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.room-remove-btn {
+  flex-shrink: 0;
+}
+
+.add-room-btn {
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.is-invalid {
+  border-color: var(--danger-color);
+}
+
+.invalid-feedback {
+  color: var(--danger-color);
+  font-size: 14px;
+  margin-top: 5px;
+}
